@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CrunchyDovah</title>
+    <title>CrunchyDovah's Page</title>
     <style>
       body {
-        background: url('pfp.PNG') no-repeat center center fixed;
+        background: url("pfp.PNG") no-repeat center center fixed;
         background-size: cover;
-        filter: blur(10px);
-        height: 100vh;
+        filter: blur(5px);
       }
 
-      .profile {
+      #content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: #fff;
-        /* insert profile picture here */
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        font-size: 4em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        color: white;
+        font-size: 2em;
+        margin-top: 0;
+      }
+
+      #links {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+
+      #links a {
+        display: block;
+        margin: 0 1em;
+        font-size: 2em;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      #links a:hover {
+        color: #c8ff00;
       }
     </style>
   </head>
   <body>
-    <div class="profile"></div>
+    <div id="content">
+      <img src="pfp.PNG" alt="Profile Picture" width="200px">
+      <h1>CrunchyDovah</h1>
+      <p>Live on Xbox and Twitch</p>
+      <div id="links">
+        <a href="CrunchyDovah">Xbox</a>
+        <a href="https://twitch.tv/CrunchyDovah">Twitch</a>
+      </div>
+    </div>
   </body>
 </html>
